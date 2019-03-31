@@ -15,7 +15,10 @@
 // Tablets & Small Laptops
 @include mediaMd {
     main {
-        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: center;
         
         .lg-heading {
@@ -48,6 +51,7 @@
         .portrait {
             width: 150px;
             height: 150px;
+            background: url(../img/my-img-small.png);
         }
     }
 
