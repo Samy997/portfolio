@@ -55,7 +55,8 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/my-img.png);
+      background: url(../img/my-img-small.png);
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px #e00a4a; }
   .menu .nav-item {
@@ -158,13 +159,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job2';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
-    border: #e00a4a 3px solid; }
+    border: #e00a4a 3px solid;
+    width: 100%; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
